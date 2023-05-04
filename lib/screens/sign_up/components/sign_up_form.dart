@@ -53,15 +53,15 @@ class _SignUpFormState extends State<SignUpForm> {
           DefaultButton(
             text: "Continue",
             press: () async {
-              if (_formKey.currentState!.validate()) {
-                _formKey.currentState!.save();
-                final newUser = await _auth.createUserWithEmailAndPassword(
-                    email: email, password: password);
-                // if all are valid then go to success screen
-                if (newUser != null) {
-                  Navigator.pushNamed(context, CompleteProfileScreen.routeName);
-                }
-              }
+              // if (_formKey.currentState!.validate()) {
+              //   _formKey.currentState!.save();
+              //   final newUser = await _auth.createUserWithEmailAndPassword(
+              //       email: email, password: password);
+              //   // if all are valid then go to success screen
+              //   if (newUser != null) {
+              Navigator.pushNamed(context, CompleteProfileScreen.routeName);
+              //   }
+              // }
             },
           ),
         ],
