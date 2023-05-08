@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:temp/components/home_screen.dart';
 import 'routes.dart';
 import 'screens/splash/splash_screen.dart';
 import 'theme.dart';
@@ -17,13 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'The Oasis Shop',
-      theme: theme(),
-      // home: SplashScreen(),
-      // We use routeName so that we don't need to remember the name
-      initialRoute: SplashScreen.routeName,
-      routes: routes,
+      home: HomeScreen(),
     );
   }
 }

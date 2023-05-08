@@ -53,9 +53,6 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
           DefaultButton(
             text: "continue",
             press: () {
-              if (_formKey.currentState!.validate()) {
-                Navigator.pushNamed(context, SignupSuccessScreen.routeName);
-              }
             },
           ),
         ],
